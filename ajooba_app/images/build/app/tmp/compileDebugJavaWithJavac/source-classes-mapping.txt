@@ -1,0 +1,4 @@
+io/flutter/plugins/GeneratedPluginRegistrant.java
+ io.flutter.plugins.GeneratedPluginRegistrant
+com/harponline/ajooba/ajooba_app/BuildConfig.java
+ com.harponline.ajooba.ajooba_app.BuildConfig

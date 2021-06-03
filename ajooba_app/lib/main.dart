@@ -1,4 +1,7 @@
-import 'package:ajooba_app/veg.dart';
+import 'package:ajooba_app/cart.dart';
+
+import 'veg.dart';
+import 'fruit.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -9,6 +12,10 @@ void main() {
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   MainStaggeredDualViewGrid m = new MainStaggeredDualViewGrid();
+  MainStaggeredDualViewGrid1 n = new MainStaggeredDualViewGrid1();
+  Cart l = new Cart();
+
+
   Widget build(BuildContext context) {
   /*  Widget rollOverImageSection = Container(
       child: Column(
@@ -61,6 +68,16 @@ class MyApp extends StatelessWidget {
               appBar: AppBar(
                 backgroundColor: Colors.white,
                 elevation: 0,
+                title: Text('Ajooba'),
+                leading: Container(
+                  child: IconButton(onPressed: () {}, icon: Icon(Icons.menu),
+                  color: Colors.black,),
+                ),
+                actions: <Widget>[
+                  Container(
+                    color: Colors.red,
+                      child: IconButton(onPressed: () {},
+                          icon: Icon(Icons.shopping_cart))),],
                 bottom: TabBar(
                   tabs: [
                     Image(
@@ -127,8 +144,7 @@ class MyApp extends StatelessWidget {
                 _buildGrid(),
                 m.build(context),
                 //Icon(Icons.food_bank_outlined),
-                Icon(Icons.shop),
-                Icon(Icons.shopping_cart),
+                n.build(context),
               ],
             ),
              ),

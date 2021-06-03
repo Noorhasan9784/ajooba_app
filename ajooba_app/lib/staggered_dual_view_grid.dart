@@ -30,6 +30,9 @@ class MainStaggeredDualViewGrid extends StatelessWidget {
             )));
   }
 }
+
+
+
 class StaggeredDualView extends StatelessWidget {
   const StaggeredDualView({
     key,
@@ -120,3 +123,6 @@ class VegItemList extends StatelessWidget {
         ));
   }
 }
+
+
+
